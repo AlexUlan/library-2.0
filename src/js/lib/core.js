@@ -1,5 +1,5 @@
 const $ = function (selector) {
-  return $.prototype.init(selector);
+  return new $.prototype.init(selector);
 };
 
 $.prototype.init = function (selector) {
@@ -14,9 +14,7 @@ $.prototype.init = function (selector) {
   }
 
   Object.assign(this, document.querySelectorAll(selector));
-
   this.length = document.querySelectorAll(selector).length;
-
   return this;
 };
 
