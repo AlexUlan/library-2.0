@@ -90,8 +90,6 @@ $.prototype.sibilings = function () {
 
   const copyObj = Object.assign({}, this);
 
-  console.log(this);
-
   for (let i = 0; i < copyObj.length; i++) {
     const arr = copyObj[i].parentNode.children;
 
