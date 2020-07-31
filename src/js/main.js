@@ -29,7 +29,7 @@ $("[data-count='second']").click(() => {
   $("div").eq(2).fadeOut(800);
 }); */
 
-$("#trigger").click(() =>
+/* $("#trigger").click(() =>
   $("#trigger").createModal({
     text: {
       title: "Modal title",
@@ -60,5 +60,9 @@ $("#trigger").click(() =>
     },
   }),
 );
+
+$()
+  .get("https://jsonplaceholder.typicode.com/todos/1")
+  .then((res) => console.log(res)); */
 
 /* $('[data-toggle="modal"]').modal(); */
